@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+<body onload="pageLoad()">
+    <h1 class="center-text" id="trivia-game-title">Trivia Game Time</h1>
+    <p id="name">Name: </p>
+    <p id="score">Score: 0</p>
+    <p id="question-number">Question: 1</p>
+    <h3>Question</h3>
+    <p id="question-text">What is 7 * 6?</p>
+    <h3>Answer</h3>
+    <form onsubmit="runGame();return false;">
+        <div>
+            <input type="radio" id="a1" name="trivia-question-choice" />
+            <label id="a1-label" for="a1">42</label>
+        </div>
+        <div>
+            <input type="radio" id="a2" name="trivia-question-choice" />
+            <label id="a2-label" for="a2">41</label>
+        </div>
+        <div>
+            <input type="radio" id="a3" name="trivia-question-choice" />
+            <label id="a3-label" for="a3">35</label>
+        </div>
+        <div>
+            <input type="radio" id="a4" name="trivia-question-choice"/>
+            <label id="a4-label" for="a4">28</label>
+        </div>
+        <button id="submit-button">Submit</button>
+    </form>
+    
+</body>
+</html>
